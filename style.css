@@ -101,7 +101,7 @@ margin-top: 10px;
   margin-left: 30px;
 }
 .banner .trade-in-offer {
-  line-height: 2.5; /* Ajuste o valor conforme necessário */
+  line-height: 2.5; 
   font-weight: 600;
   font-size: larger;
   font-style: normal;
@@ -137,7 +137,7 @@ margin-top: 10px;
 }
 
 .shop-now-button:hover {
-  background-color: #adffdd54; /* cor de fundo ao passar o mouse */
+  background-color: #adffdd54;
 }
 
 
