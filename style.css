@@ -1,53 +1,144 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Courier New', Courier, monospace;
+} 
+
+body {
+  font-family: 'Font Awesome', sans-serif;
+}
+header {
+  height: 100px;
+  background-color:#e2e8ecf5;
+  position: relative;
+  box-shadow: 0 5px 20px rgba(189, 188, 188, 0.555);
+  
+}
+main {
+  position: relative;
+  top: -10px;
+}
+.header {
+  max-height: 1140px;
+  height: 100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+
 }
 
-.header {
-  display:flex;
-  justify-content: space-between;
+.logo {
+width: 100px;
+margin-top: 10px;
+}
+
+.logoimg {
+  width: 40px;
+  height: 40px;
+  display: flex;
   align-items: center;
-  width: 100%vw;
-  height: 100%vh;
-  background-color: rgba(236, 233, 233, 0.514);
-  box-shadow: 0 0 10px gray;
-  padding: 0 20px;
+  margin-left: 30px;
   
 }
 
 .menu {
-  list-style: none;
+  flex: 1;
   display: flex;
-  margin-top: 20px;
-  padding: 0;
+  justify-content: flex-end;
+}
+
+.menu ul,
+.menu li {
+  list-style: none;
+}
+
+.menu ul {
+  display: flex;
 }
 
 .menu li a {
-  padding: 17px;
-  text-decoration: none;
-  color: #0b0b0b;
+  color: #000000;
   font-weight: bold;
+  text-decoration: none;
+  padding-left: 15px;
+  padding-right: 40px;
+  display: flex;
+  align-items: center;
+  border-bottom:5px solid #fdfdfd00 ;
+}
+
+.menu li.active a {
+  border-bottom: 2px solid #225353;
+
+}
+
+.menu li a:hover {
+  border-bottom: 2px solid #225353;
+}
+
+.active a.home {
+  color: #225353;
+}
+
+
+.banner {
+  height:calc(100vh - 100px); 
+  background-color:#333;
+  background-image:url('./img/hero-alisson.png') ;
+  background-size: cover;
+  background-position:center;
+  overflow: hidden;
+}
+
+.banner .slidearea {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  align-items: flex-start;
+  color: #000000;
+  margin-top: 180px;
+  margin-left: 30px;
+}
+.banner .trade-in-offer {
+  line-height: 2.5; /* Ajuste o valor conforme necessário */
+  font-weight: 600;
+  font-size: larger;
+  font-style: normal;
+}
+
+.banner .off {
+  line-height: 3.5;
+  font-weight: 100;
+  color: rgb(141, 138, 138);
+}
+
+.banner h1 {
+  font-weight: bold;
+  font-size: 50px;
+  
+}
+
+.banner h1 span {
+  color: #225353;
+}
+
+.shop-now-button {
+  background-image: url('./img/button.png');
+  background-size: cover;
+  background-color: transparent;
+  color: #225353;
   font-size: 18px;
-  position: relative;
+  font-weight: bold;
+  padding: 15px 60px;
+  border: none;
+  cursor: pointer;
+  transition:background-color 0.3s ease;
+}
+
+.shop-now-button:hover {
+  background-color: #adffdd54; /* cor de fundo ao passar o mouse */
 }
 
 
-.menu a::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 2px;
-  background: green;
-  transition: width 0.3s;
-}
-
-.menu a:hover::after {
-  width: 100%;
-}
-
-.menu a.home {
-  color: green;
-}
 
